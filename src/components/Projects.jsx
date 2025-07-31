@@ -6,21 +6,31 @@ import '../App.css';
 
 const projects = [
     {
-        title: "Med care",
-        image: "https://bvmedical.com/cdn/shop/products/30-300-254_6_1445x.png?v=1665760682",
-        github: "https://github.com/yourusername/project1"
+        title: "Newsry",
+        image: "/Untitled design.png",
+        github: "https://drive.google.com/drive/folders/10XhNifC86vt6cZF6sfT-gyd-3cpqzj9q?usp=sharing"
+    },
+    {
+        title: "Nextbud",
+        image: "https://play-lh.googleusercontent.com/cGic1pv73sfN6fJkCVFGnLj96GZqhrQ8rg_GrskbVxA5_pLUAGp5wjAVTPK6hFNdFXA=w240-h480-rw",
+        github: "https://play.google.com/store/apps/details?id=com.nextbud.app&hl=en"
     },
     {
         title: "BootIQ",
-        image: "https://s3-alpha-sig.figma.com/img/060f/f514/32e84344802578fb035b3c4d31bf5336?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jCT8ssitMsTZOoEs~d12vX9nUiNGYzubdoJPjvmWk61B-kh1Ux~komNyT5h4qdIyzTIQmfRHnzPntymJoRkRnI8nH-ma2a4WZZ607gNKhUEXryEfgf6Y5x9ZIYDZR3DB1AxURu~RiJNG6H33ziwphc54WEJGxMaEldRYw9QDYO8~GmDeF84O6F8nJY3HGXSvxV4Z1sRHAqYw1Q98QTjj4Uc-tE77093BROG0dx6aSbzfaYvkC1RdQJMDw3Qhl-JqK15JPROK8n965WNOyPqIjRNfpttg6-nMUc5heoCtACKpvEEuOrqS7YsyXXlzfyn20oHxkGrieeQXIE-nKtLQTg__",
-        github: "https://github.com/yourusername/project2"
+        image: "https://play-lh.googleusercontent.com/EylVqq-InbAuzt4JLJywNb3svWpjcM_NAet5RHcQ4BeFR2vQjL7c7T9qGBXoXj-X_A=w240-h480-rw",
+        github: "https://play.google.com/store/apps/details?id=com.bootiq.user"
     },
     {
-        title: "Sell-X",
-        image: "https://forgeglobal.com/site/assets/files/288420/x-energy-logo-500w.png",
-        github: "https://github.com/yourusername/project3"
+        title: "Zella Marketplace",
+        image: "https://play-lh.googleusercontent.com/3RuaQfTeXhu5fZAzEoATnZApbIFl_EBJFoz3xF9xYiyRHrobo6F7TezIFcXa1wShRkDG0Y9D8gdROR3nxaYewg=w240-h480-rw",
+        github: "https://play.google.com/store/apps/details?id=com.zella.ng"
     },
-    // Add more projects here
+    {
+        title: "QuikFood",
+        image: "https://play-lh.googleusercontent.com/Ywo7jS0_h_kp_bdDrJRdJLPzzKLTbDc2-qgJ1CvKDf2adi0KF-8RQbWH6zRGeMfjsbY=w240-h480-rw",
+        github: "https://play.google.com/store/apps/details?id=com.quikfood.quik_food"
+    },
+
 ];
 
 const AllProjects = () => {
@@ -38,8 +48,8 @@ const AllProjects = () => {
                         <img src={project.image} alt={project.title} className="project-image" />
                         <div className="project-overlay">
                             <h3>{project.title}</h3>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
-                                View on GitHub
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="Download-link">
+                                Download app
                             </a>
                         </div>
                     </motion.div>
@@ -47,7 +57,7 @@ const AllProjects = () => {
             </div>
             <div className="more-projects">
                 <a href="https://github.com/heebu" target="_blank" rel="noopener noreferrer">
-                    See more on GitHub
+                    See GitHub Projects
                 </a>
             </div>
         </section>

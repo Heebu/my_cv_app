@@ -30,7 +30,7 @@ const AboutMe = () => {
                     transition={{ delay: 1, duration: 1 }}
                 >
                     <span className="comment">{`//`} But curiosity drove me to...</span>
-                    <br /> <span className="code">const skillSet = ["Mobile Apps", "UI/UX", "Web Development"];</span>
+                    <br /> <span className="code">const skillSet = ["Mobile Apps", "Web Development"];</span>
                 </motion.p>
 
                 <motion.p

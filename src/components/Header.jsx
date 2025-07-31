@@ -12,16 +12,16 @@ const HeaderSection = () => {
                 {/* Display animated code snippets */}
                 <div className="code-line">const dev = "Heebu-Prime";</div>
                 <div className="code-line">const name = "Idris Adedeji";</div>
-                <div className="code-line">const experience = "2+ years";</div>
+                <div className="code-line">const experience = "3+ years";</div>
                 <div className="code-line">const flutter_skills = ["Flutter", "Flutter flame",];</div>
-                <div className="code-line">const dart_kills = ["Dart", "Angular Dart", "Dart frog"];</div>
+                <div className="code-line">const dart_kills = ["Dart", "Dart barebone", "Dart frog"];</div>
                 <div className="code-line">const js_skills = ["JS", "React.JS", "Node.js", "Next.js"];</div>
                 <div className="code-line">const hubby = ["Gaming", "Coding..", "Hacking", "Cracking"];</div>
                 <div className="code-line">const backend_skills = ["Firebase", "Superbase", "Node.js", "Express.js",];
                 </div>
 
                 {
-                    [1,2,3,4,5,6, 7, 8, 9, 10].map((item, index) => (
+                    [1,2,3,4,5,6, 7, 8, 9, 10, 11].map((item, index) => (
                         <div className="code-line">const addiction = "I love coding";</div>))
 
                 }
@@ -42,7 +42,7 @@ const HeaderSection = () => {
 
                 <motion.a
                     rel="preconnect"
-                    href="/"
+                    href="/projects"
                     className="explore-button"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

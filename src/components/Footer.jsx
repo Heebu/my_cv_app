@@ -18,7 +18,7 @@ const Footer = () => {
                     <a href="https://x.com/Heebu_Prime" target="_blank" rel="noopener noreferrer">
                         <FaTwitter className="social-icon" />
                     </a>
-                    <a href="mailto:your.ayblazz@gmail.com">
+                    <a href="mailto:your.idrisadedejiayobami.com">
                         <FaEnvelope className="social-icon" />
                     </a>
                 </div>
