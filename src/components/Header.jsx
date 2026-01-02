@@ -12,7 +12,7 @@ const HeaderSection = () => {
                 {/* Display animated code snippets */}
                 <div className="code-line">const dev = "Heebu-Prime";</div>
                 <div className="code-line">const name = "Idris Adedeji";</div>
-                <div className="code-line">const experience = "3+ years";</div>
+                <div className="code-line">const experience = "4+ years";</div>
                 <div className="code-line">const flutter_skills = ["Flutter", "Flutter flame",];</div>
                 <div className="code-line">const dart_kills = ["Dart", "Dart barebone", "Dart frog"];</div>
                 <div className="code-line">const js_skills = ["JS", "React.JS", "Node.js", "Next.js"];</div>
@@ -22,12 +22,17 @@ const HeaderSection = () => {
 
                 {
                     [1,2,3,4,5,6, 7, 8, 9, 10, 11].map((item, index) => (
-                        <div className="code-line">const addiction = "I love coding";</div>))
+                        <div key={index} className="code-line">const addiction = "I love coding";</div>))
 
                 }
             </div>
 
-            <div className="intro-content">
+            <motion.div 
+                className="intro-content"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
                 <h1>Hi, I'm Idris Adedeji</h1>
 
                 {/* Typewriter Effect for Skills */}
@@ -37,6 +42,7 @@ const HeaderSection = () => {
                         autoStart: true,
                         loop: true,
                         delay: 75,
+                        wrapperClassName: "typewriter-text"
                     }}
                 />
 
@@ -44,12 +50,12 @@ const HeaderSection = () => {
                     rel="preconnect"
                     href="/projects"
                     className="explore-button"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
+                    whileHover={{ scale: 1.05, boxShadow: "0 0 25px var(--primary-color)" }}
+                    whileTap={{ scale: 0.95 }}
                 >
                     Explore My Work
                 </motion.a>
-            </div>
+            </motion.div>
         </header>
     );
 };

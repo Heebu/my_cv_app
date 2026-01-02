@@ -36,14 +36,28 @@ const projects = [
 const AllProjects = () => {
     return (
         <section className="projects">
-            <h2>My Projects</h2>
+            <motion.h2
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+            >
+                My Projects
+            </motion.h2>
             <div className="projects-grid">
                 {projects.map((project, index) => (
                     <motion.div
                         key={index}
                         className="project-item"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        whileHover={{ 
+                            scale: 1.05, 
+                            boxShadow: "0 0 25px rgba(0, 243, 255, 0.4)",
+                            borderColor: "var(--primary-color)"
+                        }}
                     >
                         <img src={project.image} alt={project.title} className="project-image" />
                         <div className="project-overlay">
@@ -56,9 +70,15 @@ const AllProjects = () => {
                 ))}
             </div>
             <div className="more-projects">
-                <a href="https://github.com/heebu" target="_blank" rel="noopener noreferrer">
+                <motion.a 
+                    href="https://github.com/heebu" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, backgroundColor: "var(--secondary-color)", color: "#fff" }}
+                    whileTap={{ scale: 0.95 }}
+                >
                     See GitHub Projects
-                </a>
+                </motion.a>
             </div>
         </section>
     );
