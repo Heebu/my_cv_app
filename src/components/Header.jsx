@@ -33,18 +33,30 @@ const HeaderSection = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <h1>Hi, I'm Idris Adedeji</h1>
+                <h1>Idris Adedeji</h1>
+                <h2 style={{ color: 'var(--text-color)', fontSize: '1.5rem', marginTop: '0.5rem', marginBottom: '1.5rem' }}>Software Engineer</h2>
 
                 {/* Typewriter Effect for Skills */}
                 <Typewriter
                     options={{
-                        strings: ["Flutter Developer", "React Developer", "Web Enthusiast"],
+                        strings: [
+                            "Building Scalable Mobile Applications", 
+                            "Crafting Responsive Web Interfaces", 
+                            "Engineering Robust Backend Systems",
+                            "Solving Complex Technical Problems"
+                        ],
                         autoStart: true,
                         loop: true,
-                        delay: 75,
+                        delay: 50,
+                        deleteSpeed: 30,
                         wrapperClassName: "typewriter-text"
                     }}
                 />
+                
+                <p style={{ marginTop: '1.5rem', color: '#a0a0a0', lineHeight: '1.6', maxWidth: '600px', margin: '1.5rem auto' }}>
+                    Transforming ideas into high-performance digital reality. 
+                    Specialized in Flutter, React, and modern web technologies.
+                </p>
 
                 <motion.a
                     rel="preconnect"
@@ -53,7 +65,7 @@ const HeaderSection = () => {
                     whileHover={{ scale: 1.05, boxShadow: "0 0 25px var(--primary-color)" }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Explore My Work
+                    View Portfolio
                 </motion.a>
             </motion.div>
         </header>

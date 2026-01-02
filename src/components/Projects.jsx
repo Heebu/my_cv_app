@@ -7,26 +7,36 @@ import '../App.css';
 const projects = [
     {
         title: "Newsry",
+        description: "A comprehensive news aggregation platform delivering real-time updates. Features include personalized feeds, offline reading capabilities, and a seamless user interface designed for high engagement.",
+        tech: ["Flutter", "Dart", "REST API"],
         image: "/Untitled design.png",
         github: "https://drive.google.com/drive/folders/10XhNifC86vt6cZF6sfT-gyd-3cpqzj9q?usp=sharing"
     },
     {
         title: "Nextbud",
+        description: "An innovative productivity tool designed to streamline task management. Implements complex state management and local data persistence to ensure reliability and speed.",
+        tech: ["Flutter", "Firebase", "State Management"],
         image: "https://play-lh.googleusercontent.com/cGic1pv73sfN6fJkCVFGnLj96GZqhrQ8rg_GrskbVxA5_pLUAGp5wjAVTPK6hFNdFXA=w240-h480-rw",
         github: "https://play.google.com/store/apps/details?id=com.nextbud.app&hl=en"
     },
     {
         title: "BootIQ",
+        description: "A specialized educational application offering interactive quizzes and progress tracking. Built with a focus on performance optimization and intuitive navigation for learners.",
+        tech: ["React Native", "Node.js", "MongoDB"],
         image: "https://play-lh.googleusercontent.com/EylVqq-InbAuzt4JLJywNb3svWpjcM_NAet5RHcQ4BeFR2vQjL7c7T9qGBXoXj-X_A=w240-h480-rw",
         github: "https://play.google.com/store/apps/details?id=com.bootiq.user"
     },
     {
         title: "Zella Marketplace",
+        description: "A robust e-commerce solution facilitating secure transactions and inventory management. Showcases advanced API integration and a secure payment gateway implementation.",
+        tech: ["Flutter", "Stripe API", "Cloud Functions"],
         image: "https://play-lh.googleusercontent.com/3RuaQfTeXhu5fZAzEoATnZApbIFl_EBJFoz3xF9xYiyRHrobo6F7TezIFcXa1wShRkDG0Y9D8gdROR3nxaYewg=w240-h480-rw",
         github: "https://play.google.com/store/apps/details?id=com.zella.ng"
     },
     {
         title: "QuikFood",
+        description: "A food delivery application connecting users with local restaurants. Features real-time order tracking, geolocation services, and a dynamic menu system.",
+        tech: ["Flutter", "Google Maps API", "Firebase"],
         image: "https://play-lh.googleusercontent.com/Ywo7jS0_h_kp_bdDrJRdJLPzzKLTbDc2-qgJ1CvKDf2adi0KF-8RQbWH6zRGeMfjsbY=w240-h480-rw",
         github: "https://play.google.com/store/apps/details?id=com.quikfood.quik_food"
     },
@@ -42,7 +52,7 @@ const AllProjects = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
             >
-                My Projects
+                Featured Projects
             </motion.h2>
             <div className="projects-grid">
                 {projects.map((project, index) => (
@@ -54,16 +64,22 @@ const AllProjects = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         whileHover={{ 
-                            scale: 1.05, 
-                            boxShadow: "0 0 25px rgba(0, 243, 255, 0.4)",
+                            scale: 1.03, 
+                            boxShadow: "0 0 25px rgba(0, 243, 255, 0.2)",
                             borderColor: "var(--primary-color)"
                         }}
                     >
                         <img src={project.image} alt={project.title} className="project-image" />
                         <div className="project-overlay">
                             <h3>{project.title}</h3>
+                            <p className="project-description">{project.description}</p>
+                            <div className="project-tech">
+                                {project.tech.map((t, i) => (
+                                    <span key={i} className="tech-tag">{t}</span>
+                                ))}
+                            </div>
                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="Download-link">
-                                Download app
+                                View Project
                             </a>
                         </div>
                     </motion.div>
@@ -77,7 +93,7 @@ const AllProjects = () => {
                     whileHover={{ scale: 1.1, backgroundColor: "var(--secondary-color)", color: "#fff" }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    See GitHub Projects
+                    Explore GitHub Repository
                 </motion.a>
             </div>
         </section>

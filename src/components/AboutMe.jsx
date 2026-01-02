@@ -21,36 +21,49 @@ const AboutMe = () => {
                 </motion.h2>
 
                 <motion.div
-                    className="story-line"
+                    className="story-section"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2, duration: 0.8 }}
                 >
-                    <span className="comment">{`//`} Hi, I’m Idris Adedeji...</span>
-                    <br /> <span className="code">const journey = "Flutter Developer for 4+ years";</span>
+                    <span className="comment">{`/* WHO_AM_I */`}</span>
+                    <p className="story-text">
+                        I am a dedicated <span className="highlight">Software Engineer</span> with over 4 years of experience specializing in mobile and web development. 
+                        My journey is defined by a passion for crafting robust, scalable applications that prioritize user experience and performance. 
+                        I don't just write code; I engineer solutions that bridge the gap between complex technical requirements and intuitive user interfaces.
+                    </p>
                 </motion.div>
 
                 <motion.div
-                    className="story-line"
+                    className="story-section"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
-                    <span className="comment">{`//`} But curiosity drove me to...</span>
-                    <br /> <span className="code">const skillSet = ["Mobile Apps", "Web Development"];</span>
+                    <span className="comment">{`/* TECH_STACK_EVOLUTION */`}</span>
+                    <p className="story-text">
+                        Starting with <span className="code">Flutter</span> and <span className="code">Dart</span>, I mastered the art of cross-platform mobile development, 
+                        delivering seamless experiences for Android and iOS. Driven by relentless curiosity, I expanded my arsenal to include 
+                        <span className="code"> React.js</span>, <span className="code"> Next.js</span>, and <span className="code"> Node.js</span>. 
+                        This evolution has transformed me into a versatile developer capable of architecting comprehensive full-stack systems.
+                    </p>
                 </motion.div>
 
                 <motion.div
-                    className="story-line"
+                    className="story-section"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.6, duration: 0.8 }}
                 >
-                    <span className="comment">{`//`} Now diving into React and Next.js...</span>
-                    <br /> <span className="code">const future = "Full-stack Developer";</span>
+                    <span className="comment">{`/* CURRENT_MISSION */`}</span>
+                    <p className="story-text">
+                        I thrive in challenging environments where I can apply engineering principles to solve real-world problems. 
+                        My focus is on writing clean, maintainable code and staying ahead of the curve with emerging technologies. 
+                        I am currently seeking opportunities to leverage my diverse skill set to build the next generation of digital products.
+                    </p>
                 </motion.div>
 
                 <motion.div
@@ -61,7 +74,7 @@ const AboutMe = () => {
                     transition={{ delay: 0.8, duration: 0.8 }}
                     style={{ marginTop: '2rem', textAlign: 'center', fontSize: '1.2rem', color: 'var(--text-color)' }}
                 >
-                    {`//`} Passion-driven, code-first mindset: <span className="highlight">Hack the Future</span>
+                    {`//`} Status: <span className="highlight">Ready to Deploy</span>
                 </motion.div>
             </motion.div>
         </section>
