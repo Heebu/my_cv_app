@@ -73,6 +73,15 @@ const communityProjects = [
             description: "A Dart Frog backend providing access to Nigerian educational institutions data. made with dartfrog and deployed on dart globe",
             stars: "GitHub",
             link: "https://github.com/Heebu/undergraduate-api-main"
+      },
+
+      {
+            id: 5,
+            title: "Learning Dart",
+            users: "Open Source",
+            description: "This repository contains a collection of Dart code examples that demonstrate various aspects of the Dart programming language. These examples cover topics such as basic data types, control structures, functions, classes, and asynchronous programming using Futures and Streams.",
+            stars: "GitHub",
+            link: "https://github.com/Heebu/dart_learning"
       }
 ];
 
