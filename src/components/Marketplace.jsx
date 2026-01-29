@@ -27,6 +27,15 @@ const marketplaceItems = [
             description: "Ready-to-deploy multi-vendor marketplace app with admin panel.",
             features: ["Cart System", "Vendor Dash", "Order Tracking", "Realtime Database", "Push Notifications", "Geolocator", "Stripe Integration", "chat system"],
             link: "wa.me/2348112006431"
+      },
+
+      {
+            id: 3,
+            title: "Newsry",
+            price: "$49",
+            description: "A comprehensive news aggregation platform delivering real-time updates. Features include personalized feeds and offline reading capabilities.",
+            features: ["Realtime Database", "Google auth", "Push Notifications",],
+            link: "https://drive.google.com/drive/folders/10XhNifC86vt6cZF6sfT-gyd-3cpqzj9q?usp=sharing"
       }
 ];
 
@@ -55,6 +64,15 @@ const communityProjects = [
             description: "A classic Tic-Tac-Toe game built with Flutter. This project is a fun, simple game that can be played by two players.",
             stars: "GitHub",
             link: "https://github.com/Heebu/tictactoe_1_0_8"
+      },
+
+      {
+            id: 4,
+            title: "Student API",
+            users: "Open Source",
+            description: "A Dart Frog backend providing access to Nigerian educational institutions data. made with dartfrog and deployed on dart globe",
+            stars: "GitHub",
+            link: "https://github.com/Heebu/undergraduate-api-main"
       }
 ];
 

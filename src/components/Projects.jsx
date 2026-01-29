@@ -5,16 +5,26 @@ import '../App.css';
 
 const projects = [
     {
-        title: "Newsry",
-        description: "A comprehensive news aggregation platform delivering real-time updates. Features include personalized feeds and offline reading capabilities.",
+        title: "Jami",
+        description: "Jami: Thrive Locally is a community-focused app designed for Black and ethnic minority individuals, particularly in the UK, to navigate local life, find community, and get advice. It facilitates connections for support regarding visas, jobs, safe neighborhoods, and local events to help newcomers settle",
         tech: ["Flutter", "Dart", "REST API"],
-        image: "/Untitled design.png",
-        link: "https://drive.google.com/drive/folders/10XhNifC86vt6cZF6sfT-gyd-3cpqzj9q?usp=sharing",
+        image: "/image.png",
+        link: "https://play.google.com/store/apps/details?id=com.nextbud.app&hl=en_GB",
         type: "Mobile App"
     },
+
+    {
+        title: "Motobills",
+        description: "Motobills is a Nigerian digital payment platform designed to provide affordable, secure, and fast bill payments, including airtime, data, electricity, and cable TV subscriptions. A product of the Sujimoto Group, it distinguishes itself by offering, cashback, rewards, and discounted rates for transactions. The app aims to simplify financial transactions and enable users to save money on daily payments.",
+        tech: ["Flutter", "Dart", "REST API"],
+        image: "/image copy.png",
+        link: "https://play.google.com/store/apps/details?id=com.motobills.app&hl=en_GB",
+        type: "Mobile App"
+    },
+
     {
         title: "Nextbud",
-        description: "An innovative productivity tool designed to streamline task management. Implements complex state management and local data persistence.",
+        description: "NextBud is a digital platform designed to help people thrive in any city. We connect users to local resources, trusted businesses, job opportunities, cultural events, and community networks, all tailored to their needs. With AI-powered recommendations and a community-driven approach, NextBud helps users settle faster, build meaningful connections, and advance socially, professionally, and economically. Our platform also strengthens local economies by empowering diverse communities to grow businesses, find jobs, and increase social capital.",
         tech: ["Flutter", "Firebase", "State Management"],
         image: "https://play-lh.googleusercontent.com/cGic1pv73sfN6fJkCVFGnLj96GZqhrQ8rg_GrskbVxA5_pLUAGp5wjAVTPK6hFNdFXA=w240-h480-rw",
         link: "https://play.google.com/store/apps/details?id=com.nextbud.app&hl=en",
@@ -22,8 +32,8 @@ const projects = [
     },
     {
         title: "BootIQ",
-        description: "A specialized educational application offering interactive quizzes and progress tracking. Built with a focus on performance optimization.",
-        tech: ["React Native", "Node.js", "MongoDB"],
+        description: "This app allows users to purchase clothing items from top brands worldwide, get them delivered to their doorstep, and receive updates on new products and collections.",
+        tech: ["Flutter", "Node.js", "MongoDB"],
         image: "https://play-lh.googleusercontent.com/EylVqq-InbAuzt4JLJywNb3svWpjcM_NAet5RHcQ4BeFR2vQjL7c7T9qGBXoXj-X_A=w240-h480-rw",
         link: "https://play.google.com/store/apps/details?id=com.bootiq.user",
         type: "Cross Platform"
@@ -36,6 +46,15 @@ const projects = [
         link: "https://play.google.com/store/apps/details?id=com.zella.ng",
         type: "E-commerce"
     },
+    {
+        title: "Intelregion",
+        description: "a dynamic media and technology company providing diverse content spanning news, entertainment, food, sports, and technology. Our mission is to bridge the gap between trending stories and the digital audience by curating insightful, engaging, and authentic content",
+        tech: ["React", "REST API"],
+        image: "/image copy 2.png",
+        link: "https://www.intelregion.com",
+        type: "Web"
+    },
+    
     {
         title: "QuikFood",
         description: "A food delivery application connecting users with local restaurants. Features real-time order tracking and geolocation services.",
