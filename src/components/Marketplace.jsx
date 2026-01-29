@@ -17,7 +17,7 @@ const marketplaceItems = [
             title: "Dreap",
             price: "$49",
             description: "A complete Flutter & Firebase boilerplate with dating app design.",
-            features: ["paystack Integration", "Auth Flow", "Push Notifications", "Geolocator", "Realtime Database", ],
+            features: ["paystack Integration", "Auth Flow", "Push Notifications", "Geolocator", "Realtime Database",],
             link: "wa.me/2348112006431"
       },
       {
@@ -86,7 +86,7 @@ const communityProjects = [
 ];
 
 const Marketplace = () => {
-      const [activeTab, setActiveTab] = useState('marketplace');
+      const [activeTab, setActiveTab] = useState('community');
 
       return (
             <section id="marketplace" className="marketplace-section">
