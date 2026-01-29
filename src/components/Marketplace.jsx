@@ -14,19 +14,19 @@ import '../App.css';
 const marketplaceItems = [
       {
             id: 1,
-            title: "SaaS Starter Kit",
+            title: "Dreap",
             price: "$49",
-            description: "A complete Flutter & Node.js boilerplate for rapid SaaS development.",
-            features: ["Stripe Integration", "Auth Flow", "Push Notifications"],
-            link: "#"
+            description: "A complete Flutter & Firebase boilerplate with dating app design.",
+            features: ["paystack Integration", "Auth Flow", "Push Notifications", "Geolocator", "Realtime Database", ],
+            link: "wa.me/2348112006431"
       },
       {
             id: 2,
             title: "E-commerce Pro",
             price: "$89",
             description: "Ready-to-deploy multi-vendor marketplace app with admin panel.",
-            features: ["Cart System", "Vendor Dash", "Order Tracking"],
-            link: "#"
+            features: ["Cart System", "Vendor Dash", "Order Tracking", "Realtime Database", "Push Notifications", "Geolocator", "Stripe Integration", "chat system"],
+            link: "wa.me/2348112006431"
       }
 ];
 

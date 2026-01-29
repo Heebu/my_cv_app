@@ -88,12 +88,12 @@ const HeaderSection = () => {
                                 borderRadius: '50px',
                                 textDecoration: 'none',
                                 color: 'var(--text-color)',
-                                border: '1px solid rgba(255,255,255,0.1)',
+                                border: 'var(--glass-border)',
                                 fontWeight: '600',
-                                backgroundColor: 'rgba(255,255,255,0.05)',
+                                backgroundColor: 'var(--card-bg)',
                                 backdropFilter: 'blur(10px)'
                             }}
-                            whileHover={{ backgroundColor: 'rgba(255,255,255,0.1)', borderColor: 'var(--primary-color)' }}
+                            whileHover={{ backgroundColor: 'var(--primary-color)', color: '#000', borderColor: 'var(--primary-color)' }}
                             whileTap={{ scale: 0.95 }}
                         >
                             GitHub
